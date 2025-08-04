@@ -82,18 +82,31 @@
                 <a href="#calculator" class="text-white hover:text-yellow-300 font-medium">Калькулятор</a>
                 <a href="#contact" class="text-white hover:text-yellow-300 font-medium">Контакты</a>
             </nav>
-            <div class="flex items-center space-x-4">
+            <div class="flex flex-col items-center space-y-2">
+              <!-- Первый ряд: WhatsApp + Telegram -->
+              <div class="flex items-center space-x-4">
                 <a href="https://wa.me/79999999999" class="text-green-300 hover:text-green-100">
-                    <i class="fab fa-whatsapp text-2xl"></i>
+                  <i class="fab fa-whatsapp text-2xl"></i>
                 </a>
                 <a href="https://t.me/hermesfinance" class="text-white hover:text-gray-200">
-                    <i class="fab fa-telegram text-2xl"></i>
+                  <i class="fab fa-telegram text-2xl"></i>
                 </a>
-                <button class="md:hidden text-white" id="mobile-menu-button">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
+              </div>
+              <!-- Второй ряд: Телефон + Почта -->
+              <div class="flex items-center space-x-4">
+                <a href="tel:+71111111111" class="text-white hover:text-gray-200">
+                  <i class="fas fa-phone text-2xl"></i>
+                </a>
+                <a href="mailto:mail@mail.ru" class="text-white hover:text-gray-200">
+                  <i class="fas fa-envelope text-2xl"></i>
+                </a>
+              </div>
+              <!-- Мобильная кнопка -->
+              <button class="md:hidden text-white" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+              </button>
             </div>
-        </div>
+        
 
         <!-- Mobile menu -->
         <div class="md:hidden hidden bg-blue-500 py-2 px-4 shadow-md" id="mobile-menu">
