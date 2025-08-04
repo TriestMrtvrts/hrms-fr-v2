@@ -51,7 +51,7 @@
 
 
 
-    <header class="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-600 to-blue-400 shadow-md z-[9999]">
+    <header class="relative fixed top-0 left-0 w-full bg-gradient-to-r from-blue-600 to-blue-400 shadow-md z-[9999]">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
                 <img src="images/herm_logo.jpg" alt="Логотип Гермес финанс" class="w-12 h-12 mr-3 rounded-full shadow-md">
@@ -97,7 +97,10 @@
         
 
         <!-- Mobile menu -->
-        <div class="md:hidden hidden bg-blue-500 py-2 px-4 shadow-md" id="mobile-menu">
+        <div
+            id="mobile-menu"
+            class="absolute top-full left-0 w-full bg-blue-500 py-2 px-4 shadow-md z-[9998] md:hidden hidden"
+        >
             <a href="#services" class="block py-2 text-white hover:text-yellow-300">Услуги</a>
             <a href="#advantages" class="block py-2 text-white hover:text-yellow-300">Преимущества</a>
             <a href="about.html" class="block py-2 text-white hover:text-yellow-300">О нас</a>
